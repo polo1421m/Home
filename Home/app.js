@@ -1,32 +1,7 @@
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December"
-];
+console.log(document.getElementById("text-div"));
 
-const days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-  "Monday "
-];
+const tagItems = document.getElementsByTagName("p");
+console.log(tagItems);
 
-const date = new Date();
-// console.log(date);
-
-console.log(months[date.getMonth()]);
-
-console.log(days[date.getDay()]);
+const newTagItems = [...tagItems];
+console.log(newTagItems);
